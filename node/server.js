@@ -6,6 +6,7 @@ var exphbs  = require('express-handlebars');
 var cors = require('cors');
 
 var mongoUri = process.env.MONGOLAB_URI ||
+  process.env.MONGO_URL ||
   process.env.MONGOHQ_URL ||
   'mongodb://localhost/mydb';
 
